@@ -12,7 +12,7 @@ function App() {
   const [word, setWord] = useState("");
 
   const startGame = async () => {
-    const res = await fetch("http://localhost:5000/start", { method: "POST" });
+    const res = await fetch("https://hangman-game-s70j.onrender.com/start", { method: "POST" });
     const data = await res.json();
     setGameId(data.gameId);
     setDisplay(data.display);
@@ -26,7 +26,7 @@ function App() {
 
   const guessLetter = async () => {
     if (!letter || status !== "playing") return;
-    const res = await fetch("http://localhost:5000/guess", {
+    const res = await fetch("https://hangman-game-s70j.onrender.com/guess", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ gameId, letter }),
