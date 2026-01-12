@@ -2,7 +2,10 @@ body {
   margin: 0;
   font-family: "Segoe UI", sans-serif;
   background: radial-gradient(circle at top, #1e293b, #020617);
-  color: rgb(255, 255, 255);
+  color: rgb(159, 144, 144);
+  font-size: larger;
+  padding: 60px;
+  padding-left:  450px; ;
 }
 
 .app {
