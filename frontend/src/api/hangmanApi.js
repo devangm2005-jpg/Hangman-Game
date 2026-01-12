@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:5000";
+const BASE_URL = "https://hangman-game-s70j.onrender.com";
 
 export const startGame = async () => {
   const res = await axios.post(`${BASE_URL}/start`);
