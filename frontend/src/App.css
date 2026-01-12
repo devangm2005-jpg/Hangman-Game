@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top, #1e293b, #020617);
+  color: rgb(255, 255, 255);
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-card {
+  background: #020617;
+  border-radius: 20px;
+  padding: 30px;
+  width: 380px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.game-card h1 {
+  margin-bottom: 10px;
+}
+
+.hangman-img img {
+  width: 180px;
+  margin: 15px auto;
+}
+
+.word {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  font-size: 28px;
+  margin: 20px 0;
+}
+
+.word span {
+  border-bottom: 3px solid #38bdf8;
+  width: 28px;
+  text-align: center;
+}
+
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.keyboard button {
+  padding: 8px;
+  background: #1e293b;
+  border: none;
+  color: rgb(255, 255, 255);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.keyboard button:hover:not(:disabled) {
+  background: #38bdf8;
+  color: black;
+}
+
+.keyboard button:disabled {
+  background: #334155;
+  cursor: not-allowed;
+}
+
+.status {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.restart-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.restart-btn:hover {
+  opacity: 0.9;
+}
